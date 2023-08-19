@@ -40,12 +40,13 @@
 
 //slice,spice
 
-console.log("A",myarr)
+// console.log("A",myarr)
 
-const a1=myarr.slice(1,2);
-console.log(a1)
+// const a1=myarr.slice(1,2);
+// console.log(a1)
 
-console.log("B",myarr)
-const a2=myarr.splice(1,3)//manuplate the array and extract the portion of the original array
-console.log("C",myarr)
-console.log(a2)
+// console.log("B",myarr)
+// const a2=myarr.splice(1,3)//manuplate the array and extract the portion of the original array
+// console.log("C",myarr)
+// console.log(a2)
+
