@@ -1,7 +1,7 @@
 const coding=["js","ruby","java"]
 
 //for each 
-// coding.forEach(function (item){
+// coding.forEach(function (item)//it is called call back{
 //     console.log(item)
 // })
 
