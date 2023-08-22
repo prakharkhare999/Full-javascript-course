@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul class="language">
+        <li>javascript</li>
+    </ul>
+    
+</body>
+
+<script>
+//function for creating elements
+function addlanguage(langname){
+    const li=document.createElement('li')
+    li.innerHTML=`${langname}`
+    document.querySelector('.language').appendChild(li)
+
+
+}
+addlanguage("python")
+
+
+//optimal way
+
+function addoptimalway(language){
+    const li=document.createElement('li')
+    const addtext=document.createTextNode(langname)
+    li.appendChild(addtext)
+    document.querySelector('language').appendChild(li)
+}
+
+addoptimalway("java")
+
+
+//edit
+
+const secondlang=document.querySelector("li:nth-child(2)")
+//secondlang.innerHTML="mojo"
+const newli=document.createElement('li')
+newli.textContent="mojo"
+secondlang.replaceWith(newli)
+
+
+
+
+
+//edit method 2
+const firstlang=document.querySelector("li:first-child")
+firstlang.outerHTML='<li>typescript</li>'
+
+
+
+
+
+
+//remove
+const lastlang=document.querySelector('li:last-child')
+langname.remove()
+
+
+</script>
+
+
+
+</html>
