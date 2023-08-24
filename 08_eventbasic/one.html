@@ -23,9 +23,60 @@
     //bad pratice onclick ,and in inline tag we use onclick it also bad pratice we nedd to add eventlisners
 // document.getElementById('owl').onclick=function(){
 //     alert("owl hai")
-document.getElementById('owl').addEventListener('click',function(){
-alert("owl clicked againj")
+
+//some basic knowlwdge please cheack hitesh sir viseo 36
+//attachevent()
+//jquery()
+
+
+
+
+//type,timestamp,defaultprevented
+//target,toelement,srcelement,currenttarget
+//client,clinty,screenx,screeny
+//altkey,ctrkey,shiftkey,keycode
+
+
+
+
+// document.getElementById('image').addEventListener('click',function(e){
+// console.log("clicked")
+// },false)
+// document.getElementById('owl').addEventListener('click',function(e){
+// console.log("clicked 1")
+// },false)
+
+
+//event propogation have two type
+//event boobling->top se button pr event chalenge
+//event capturing->button to top pr event chalenge
+
+
+//true is called event capturing
+//false is called event boobling(defalut)
+
+//for stop propogation
+// e.stopPropogation()
+
+
+//for not working 
+//e.preventDefault
+
+
+
+//remove the images
+document.querySelector('#images').addEventListener('click',function(){
+    if(e.target.tagName=='IMG'){
+        let removeit=e.target.parentNode
+    removeit.remove()
+    }
+
+   //method 2
+  // removeit.parentNode.removeChild(removeit)
 },false)
+
+
+
 
 
 </script>
